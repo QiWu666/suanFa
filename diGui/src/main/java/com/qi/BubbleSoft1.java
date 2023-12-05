@@ -4,6 +4,7 @@ public class BubbleSoft1 {
     public static void soft(int[] a) {
         bubble(a, a.length - 1);
     }
+
     public static void soft1(int[] a) {
         bubble1(a, a.length - 1);
     }

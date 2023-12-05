@@ -17,6 +17,7 @@ public class BubbleSoftTest {
             System.out.println(j);
         }
     }
+
     @Test
     public void testBubbleTest2() {
         int[] a = {6, 5, 4, 3, 2, 1};

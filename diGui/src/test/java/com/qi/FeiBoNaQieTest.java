@@ -8,4 +8,9 @@ public class FeiBoNaQieTest {
         System.out.println(FeiBoNaQie.f(5));
         System.out.println(FeiBoNaQie.f(6));
     }
+
+    @Test
+    public void testYouHua() {
+        System.out.println(FeBoYouHua.fibonacci(6));
+    }
 }
