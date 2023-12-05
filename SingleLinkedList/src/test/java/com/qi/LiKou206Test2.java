@@ -1,7 +1,6 @@
 package com.qi;
 
 import org.junit.Test;
-
 public class LiKou206Test2 {
     @Test
     void test() {
