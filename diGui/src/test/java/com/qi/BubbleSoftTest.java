@@ -3,7 +3,7 @@ package com.qi;
 import org.junit.Test;
 
 public class BubbleSoftTest {
-    @Test
+    @org.junit.jupiter.api.Test
     public void testBubbleTest() {
         int[] a = {6, 5, 4, 3, 2, 1};
         int[] b = {432, 234, 123, 7, 6, 5, 4, 3, 2, 1};
