@@ -17,6 +17,7 @@ public class LiKou83demo1 {
             if (p1.val == p2.val) {
                 p1.next = p2.next;
             } else {
+                //向后平移
                 p1 = p1.next;
             }
         }
