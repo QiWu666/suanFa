@@ -1,4 +1,6 @@
-package com.qi;
+package com.qi.likou.a206;
+
+import com.qi.ListNode;
 
 public class LiKou206demo4 {
     /**

@@ -14,9 +14,18 @@ public class ListNode {
 
     @Override
     public String toString() {
-        return "LinkNode{" +
-                "val=" + val +
-                ", next=" + next +
-                '}';
+        StringBuilder result = new StringBuilder("[");
+        ListNode current = this;
+
+        while (current != null) {
+            result.append(current.val);
+            if (current.next != null) {
+                result.append(",");
+            }
+            current = current.next;
+        }
+
+        result.append("]");
+        return result.toString();
     }
 }

@@ -1,4 +1,6 @@
-package com.qi;
+package com.qi.likou.a19;
+
+import com.qi.ListNode;
 
 public class LiKou19demo2 {
     /**
