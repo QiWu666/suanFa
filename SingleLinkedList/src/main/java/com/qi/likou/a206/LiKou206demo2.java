@@ -1,5 +1,7 @@
 package com.qi.likou.a206;
 
+import com.qi.ListNode;
+
 public class LiKou206demo2 {
 
     static class List {
@@ -33,10 +35,19 @@ public class LiKou206demo2 {
 
         @Override
         public String toString() {
-            return "Node{" +
-                    "val=" + val +
-                    ", next=" + next +
-                    '}';
+            StringBuilder result = new StringBuilder("[");
+            MyNode current = this;
+
+            while (current != null) {
+                result.append(current.val);
+                if (current.next != null) {
+                    result.append(",");
+                }
+                current = current.next;
+            }
+
+            result.append("]");
+            return result.toString();
         }
 
         public MyNode() {
@@ -67,6 +78,17 @@ public class LiKou206demo2 {
             newList.addFirst(removed);
         }
         return newList.head;
+    }
+
+    public static void main(String[] args) {
+        LiKou206demo2.MyNode n1 = new LiKou206demo2.MyNode(1, null);
+        LiKou206demo2.MyNode n2 = new LiKou206demo2.MyNode(2, n1);
+        LiKou206demo2.MyNode n3 = new LiKou206demo2.MyNode(3, n2);
+        LiKou206demo2.MyNode n4 = new LiKou206demo2.MyNode(4, n3);
+        LiKou206demo2.MyNode n5 = new LiKou206demo2.MyNode(5, n4);
+        //System.out.println(n5);
+        LiKou206demo2 re = new LiKou206demo2();
+        System.out.println(re.reverseList2(n5));
     }
 }
 
