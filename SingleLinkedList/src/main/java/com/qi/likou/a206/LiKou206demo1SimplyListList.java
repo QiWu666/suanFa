@@ -1,5 +1,10 @@
 package com.qi.likou.a206;
 
+/**
+ * 206. 反转链表
+ * 简单
+ * 给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。
+ */
 public class LiKou206demo1SimplyListList {
 
     public MyNode reverse(MyNode head) {
