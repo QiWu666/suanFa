@@ -50,7 +50,7 @@ public class LeetCode23demo1 {
         ListNode right = split(lists, m + 1, j);
         return mergeTwoLists(left, right);
     }
-
+    //TODO  WILL TO FIXED BUG
     public static void main(String[] args) {
         ListNode node = new ListNode(1, new ListNode(3, null));
         ListNode node2 = new ListNode(4, new ListNode(2, null));
