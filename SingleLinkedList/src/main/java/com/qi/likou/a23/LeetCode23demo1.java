@@ -32,7 +32,7 @@ public class LeetCode23demo1 {
         if (listNodes.length==0) {
             return null;
         }
-        return split(listNodes, 0, listNodes.length);
+        return split(listNodes, 0, listNodes.length-1);
     }
 
     /**
@@ -58,6 +58,6 @@ public class LeetCode23demo1 {
         ListNode node4 = new ListNode(9, new ListNode(8, null));
         ListNode[] listNodes = {node, node2, node3, node4};
         LeetCode23demo1 leetCode23demo1 = new LeetCode23demo1();
-        leetCode23demo1.mergeKLists(listNodes);
+        System.out.println(leetCode23demo1.mergeKLists(listNodes));
     }
 }
