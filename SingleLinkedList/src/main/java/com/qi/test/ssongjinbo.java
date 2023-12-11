@@ -1,3 +1,5 @@
+package com.qi.test;
+
 import java.util.Scanner;
 
 public class ssongjinbo {
