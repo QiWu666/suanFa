@@ -28,7 +28,7 @@ public class LeetCode234demo1 {
         }
         return true;
     }
-
+    // 反转链表
     private ListNode reverse(ListNode o1) {
         ListNode n1 = null;
         while (o1 != null) {
