@@ -13,13 +13,13 @@ public interface Queue<E> {
     boolean offer(E value);
 
     /**
-     * 从队列中获取值，并移除
+     * 从队列中头元素获取值，并移除
      * @return 被移除的元素
      */
     E poll();
 
     /**
-     * 从对列头获取值，不移除
+     * 从队列头获取值，不移除
      * @return 如果队列非空返回队头值，否则返回null
      */
     E peek();

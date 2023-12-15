@@ -10,7 +10,6 @@ public class TestLinkListQueue {
     @org.junit.Test
     public void testOffer() {
         LinkListQueue<Integer> queue = new LinkListQueue<>();
-        System.out.println(queue.peek());
         boolean offer = queue.offer(2);
         boolean offer2 = queue.offer(3);
         boolean offer3 = queue.offer(4);
@@ -48,11 +47,5 @@ public class TestLinkListQueue {
         queue.offer(1);
         queue.offer(1);
         queue.offer(1);
-        System.out.println(queue.offer(1));
-        for (Integer i : queue) {
-            System.out.println(i);
-        }
-        System.out.println(queue.isFull());
-        System.out.println(queue.offer(1));
     }
 }
