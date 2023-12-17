@@ -2,21 +2,19 @@ package com.qi.treeNode;
 
 public class TreeNode {
     private int value;
-    private TreeNode left;
-    private TreeNode right;
+    public TreeNode left;
+    public TreeNode right;
 
     @Override
     public String toString() {
-        return "TreeNode{" +
-                "value=" + value +
-                '}';
+        return String.valueOf(value);
     }
 
     public TreeNode(int value) {
         this.value = value;
     }
 
-    public TreeNode(int value, TreeNode left, TreeNode right) {
+    public TreeNode(TreeNode left, int value, TreeNode right) {
         this.value = value;
         this.left = left;
         this.right = right;
