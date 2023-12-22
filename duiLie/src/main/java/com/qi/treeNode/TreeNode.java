@@ -1,7 +1,7 @@
 package com.qi.treeNode;
 
 public class TreeNode {
-    private int value;
+    public int value;
     public TreeNode left;
     public TreeNode right;
 
