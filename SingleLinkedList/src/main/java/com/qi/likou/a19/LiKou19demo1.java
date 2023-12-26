@@ -9,6 +9,7 @@ public class LiKou19demo1 {
      * @return
      */
     public ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode s = new ListNode(-1, head);
         recursion(head, n);
         return head;
     }
