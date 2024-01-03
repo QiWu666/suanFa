@@ -3,7 +3,6 @@ package com.qi.likou.a206;
 import com.qi.ListNode;
 
 public class LiKou206demo3 {
-    //TODO p71算法,力扣206
     public ListNode reverseList(ListNode p) {
         if (p == null || p.next == null) {
             return p;//返回最后节点
