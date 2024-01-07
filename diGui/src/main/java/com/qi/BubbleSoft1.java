@@ -11,8 +11,7 @@ public class BubbleSoft1 {
 
     /**
      * 初版冒泡排序
-     * @param a
-     * @param j 区域右边界
+     * @param j 代表未排序区域右边界
      */
     private static void bubble(int[] a, int j) {
         if (j == 0) {
@@ -47,7 +46,7 @@ public class BubbleSoft1 {
                 x = i;
             }
         }
-        bubble1(a, j - 1);
+        bubble1(a, x);
     }
 
 }

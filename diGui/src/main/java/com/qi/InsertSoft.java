@@ -10,16 +10,15 @@ public class InsertSoft {
     }
 
     /**
-     * @param a
-     * @param low 没有排序的第一个元素
+     * @param low 没有排序的右边界
      */
     private static void insertion(int[] a, int low) {
         if (low == a.length) {
             return;
         }
-        //没有排序的第一个元素
+        // 没有排序的第一个元素
         int t = a[low];
-        int i = low - 1;//已经排序的指针位置
+        int i = low - 1; // 已经排序的指针位置
         while (i >= 0 && a[i] > t) {
             a[i + 1] = a[i];
             i--;
