@@ -76,6 +76,14 @@ public class HashTableTest {
         assertEquals(2, table.size); // 断言哈希表的大小为 2
         assertEquals("张三", table.table[1].value); // 断言 key: "zhang" 对应的值为 "张三"
         assertNull(table.table[1].next); // 断言 key: "li" 对应的值为空（已被移除）
+    }
 
+    @Test
+    void testHashBoom() {
+        HashTable table = new HashTable();
+        for (int i = 0; i < 200; i = i+16) {
+            table.put(i, i, i);
+        }
+        System.out.println(table);
     }
 }

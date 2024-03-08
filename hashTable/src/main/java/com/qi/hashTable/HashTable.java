@@ -86,6 +86,7 @@ public class HashTable {
                  *  hash & table.length == 0 的一组
                  *  hash & table.length != 0 的一组
                  */
+                // a b 代表各自链表的尾指针
                 Entry a = null;
                 Entry b = null;
                 Entry aHead = null;
@@ -105,10 +106,10 @@ public class HashTable {
                         } else {
                             bHead = p;
                         }
-                        // 分配到b
+                        // 更新 b 链表的尾节点
                         b = p;
                     }
-                    p = p.next; // 更新 b 链表的尾节点
+                    p = p.next;
                 }
                 // 收尾工作
                 if (a != null) {
@@ -157,7 +158,7 @@ public class HashTable {
 
     public void put(Object key, Object value) {
         int hash = key.hashCode();
-        put(hash, key,value);
+        put(hash, key, value);
     }
 
     public Object remove(Object key) {
