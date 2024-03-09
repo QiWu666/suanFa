@@ -1,12 +1,11 @@
 package com.qi.likou.a19;
 
+
 import com.qi.ListNode;
 
 public class LiKou19demo1 {
     /**
-     * @param head
      * @param n    要倒序删除的元素的下标
-     * @return
      */
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode s = new ListNode(-1,null);
@@ -19,11 +18,12 @@ public class LiKou19demo1 {
         if (p == null) {
             return 0;
         }
-        int nth = recursion(p.next, n); // 当前节点的倒数位置
+        int nth = recursion(p.next, n); // 下一个节点的倒数位置
         if (nth == n) {
             // 假设 p=3  p.next=4  p.next.next=5
             p.next = p.next.next;
         }
+        // 返回当前节点倒数位置
         return nth + 1;
     }
 

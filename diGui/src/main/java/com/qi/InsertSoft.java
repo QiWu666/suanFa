@@ -1,7 +1,6 @@
 package com.qi;
 
 public class InsertSoft {
-    // TODO p50算法
     public static void soft(int[] a) {
         insertion(a, 1);
     }
@@ -11,7 +10,7 @@ public class InsertSoft {
 
     /**
      * @param a
-     * @param low 没有排序的第一个元素
+     * @param low 未排序区域的第一个元素
      */
     private static void insertion(int[] a, int low) {
         if (low == a.length) {
