@@ -6,7 +6,6 @@ import java.util.Iterator;
  * 基于循环数组实现，特点
  * tail停下来的位置不存储，会浪费一个位置
  */
-// TODO 没测试
 public class ArrayDeque1<E> implements Deque<E>, Iterable<E> {
     private final E[] array;
     private int head;

@@ -9,6 +9,7 @@ public class Vertex {
     String name;
     List<Edge> edges;
     boolean visited = false; // 是否被访问过
+    int inDegree = 0; // 入度的次数
 
     public Vertex(String name) {
         this.name = name;
