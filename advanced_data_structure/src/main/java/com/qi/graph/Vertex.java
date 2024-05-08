@@ -11,6 +11,9 @@ public class Vertex {
     boolean visited = false; // 是否被访问过
     int inDegree = 0; // 入度的次数
     int status; // 状态 0-未访问 1-访问中 2-访问过，用在拓扑排序
+    Integer distance = Integer.MAX_VALUE; // 距离
+    Vertex prev = null;
+
 
     public Vertex(String name) {
         this.name = name;
